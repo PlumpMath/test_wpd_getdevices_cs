@@ -64,6 +64,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>$(SolutionDir)_gen.bat vs2008 $(ConfigurationName)</PreBuildEvent>
+    <PreBuildEvent>$(SolutionDir)_gen.bat vs2008 $(ConfigurationName) $(TargetFrameworkVersion)</PreBuildEvent>
   </PropertyGroup>
 </Project>
