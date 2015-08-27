@@ -3,7 +3,7 @@ test application. wpd and mtp on C#, apply tlbimp Interop fixture GetDevices and
 
 ## 1st build
 
-Visual Studio generate 'Interop.PortableDeviceApiLib.dll' by tlbimp.
+Visual Studio generate 'Interop.PortableDeviceApiLib.dll' by tlbimp.  
 But 'Interop.PortableDeviceApiLib.dll' include mismatch COM method
 
 ## 2nd build
