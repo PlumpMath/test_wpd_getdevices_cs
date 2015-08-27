@@ -41,6 +41,13 @@ if x"%1" == x"vs2010" call "%VS100COMNTOOLS%vsvars32.bat"
 if x"%1" == x"vs2012" call "%VS110COMNTOOLS%vsvars32.bat"
 if x"%1" == x"vs2013" call "%VS120COMNTOOLS%vsvars32.bat"
 
+if x"%3" == x"v2.0" set PATH=%SystemRoot%\Microsoft.NET\Framework\v2.0.50727;%PATH%
+if x"%3" == x"v3.0" set PATH=%SystemRoot%\Microsoft.NET\Framework\v2.0.50727;%PATH%
+if x"%3" == x"v3.5" set PATH=%SystemRoot%\Microsoft.NET\Framework\v2.0.50727;%PATH%
+if x"%3" == x"v4.0" set PATH=%SystemRoot%\Microsoft.NET\Framework\v4.0.30319;%PATH%
+if x"%3" == x"v4.5" set PATH=%SystemRoot%\Microsoft.NET\Framework\v4.0.30319;%PATH%
+if x"%3" == x"v4.5.1" set PATH=%SystemRoot%\Microsoft.NET\Framework\v4.0.30319;%PATH%
+
 rem set
 rem tlbimp C:\Windows\System32\PortableDeviceApi.dll /namespace:PortableDeviceApiLib /machine:Agnostic /out:%~dp0obj\%2\Interop.PortableDeviceApiLib.dll /sysarray /transform:DispRet
 rem TlbImp C:\Windows\system32\PortableDeviceApi.dll /namespace:PortableDeviceApiLib /machine:Agnostic /out:obj\Debug\Interop.PortableDeviceApiLib.dll /sysarray /transform:DispRet /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll 
