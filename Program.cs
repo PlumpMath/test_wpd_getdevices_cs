@@ -34,8 +34,8 @@ namespace test_wpd_getdevices_cs
     {
         static void Main(string[] args)
         {
-            PortableDeviceApiLib.PortableDeviceManagerClass devMgr =
-                new PortableDeviceApiLib.PortableDeviceManagerClass();
+            PortableDeviceApiLib.PortableDeviceManager devMgr =
+                new PortableDeviceApiLib.PortableDeviceManager();
 
             for (uint loopCount = 0; loopCount < 10000; ++loopCount)
             {
