@@ -39,6 +39,8 @@ namespace test_wpd_getdevices_cs
 
             for (uint loopCount = 0; loopCount < 10000; ++loopCount)
             {
+                devMgr.RefreshDeviceList();
+
                 string[] deviceIDarray = null;
                 uint nDeviceCount = 0;
 
