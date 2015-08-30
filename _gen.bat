@@ -66,6 +66,9 @@ for /f "delims=" %%a in (%~dp0obj\%2\Interop.PortableDeviceApiLib.ildasm) do (
   set line=!line:[in][out] uint16^& pDeviceFriendlyName,=[in][out] uint16[] marshal^( uint16[]^) pDeviceFriendlyName,!
   set line=!line:[in][out] uint16^& pDeviceDescription,=[in][out] uint16[] marshal^( uint16[]^) pDeviceDescription,!
   set line=!line:[in][out] uint16^& pDeviceManufacturer,=[in][out] uint16[] marshal^( uint16[]^) pDeviceManufacturer,!
+
+  set line=!line:[out] string^&  marshal^( lpwstr^) pObjIDs,=[out] string[]  marshal^( lpwstr[]^) pObjIDs,!
+
   echo !line! >> %~dp0obj\%2\Interop.PortableDeviceApiLib.il
 )
 

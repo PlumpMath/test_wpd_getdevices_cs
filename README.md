@@ -17,6 +17,7 @@ _gen.bat apply to 'Interop.PortableDeviceApiLib.dll'
 * PortableDeviceApiLib.PortableDeviceManagerClass.GetDeviceDescription
 * PortableDeviceApiLib.IPortableDeviceManager.GetDeviceManufacturer
 * PortableDeviceApiLib.PortableDeviceManagerClass.GetDeviceManufacturer
+* PortableDeviceApiLib.IEnumPortableDeviceObjectIDs.Next
 
 # reference
 
